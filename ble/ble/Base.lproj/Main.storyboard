@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-ye-55c">
+                                <rect key="frame" x="46" y="8" width="232" height="40"/>
+                                <state key="normal" title="DiscoverPeripheral"/>
+                                <connections>
+                                    <action selector="discoverPeripheral:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTE-L6-8oA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCI-0u-f2J">
+                                <rect key="frame" x="35" y="91" width="232" height="40"/>
+                                <state key="normal" title="DiscoverService"/>
+                                <connections>
+                                    <action selector="discoverService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pr6-lq-cPq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y26-tt-cUZ">
+                                <rect key="frame" x="65" y="178" width="227" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nYX-5J-zcW">
+                                <rect key="frame" x="71" y="225" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6g-35-8aE">
+                                <rect key="frame" x="65" y="268" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iQ-LL-nqw">
+                                <rect key="frame" x="0.0" y="225" width="57" height="31"/>
+                                <state key="normal" title="Receive"/>
+                                <connections>
+                                    <action selector="receiveValueForOta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uur-kv-ubo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-Id-a0O">
+                                <rect key="frame" x="0.0" y="268" width="57" height="31"/>
+                                <state key="normal" title="Write"/>
+                                <connections>
+                                    <action selector="BlockwriteValueForOta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKm-Tu-fg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGb-4C-PAe">
+                                <rect key="frame" x="91" y="56" width="135" height="27"/>
+                                <state key="normal" title="ConnectPeripheral"/>
+                                <connections>
+                                    <action selector="connectPeripheral:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXa-kH-rw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-nc-QOJ">
+                                <rect key="frame" x="46" y="130" width="232" height="40"/>
+                                <state key="normal" title="DiscoverCharForOta"/>
+                                <connections>
+                                    <action selector="discoverCharForOta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnL-1Z-dQu"/>
+                                    <action selector="discoverService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiQ-dN-QjV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-BC-hQ5">
+                                <rect key="frame" x="71" y="306" width="228" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWD-aJ-U2K">
+                                <rect key="frame" x="0.0" y="305" width="57" height="31"/>
+                                <state key="normal" title="Receive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIv-TG-CGb">
+                                <rect key="frame" x="5" y="178" width="46" height="30"/>
+                                <state key="normal" title="Write"/>
+                                <connections>
+                                    <action selector="IdentifywriteValueForOta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoR-wb-d54"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utH-39-f8E">
+                                <rect key="frame" x="30" y="408" width="83" height="30"/>
+                                <state key="normal" title="errorCode"/>
+                                <connections>
+                                    <action selector="errorCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8q-Jn-0HX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFy-6i-rZs">
+                                <rect key="frame" x="177" y="408" width="101" height="28"/>
+                                <state key="normal" title="startQueue"/>
+                                <connections>
+                                    <action selector="startQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNe-xj-QLi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIr-LF-D4T">
+                                <rect key="frame" x="83" y="361" width="109" height="30"/>
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="readBinaryFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qaz-ja-TPd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnForConnectPeripheral" destination="HGb-4C-PAe" id="QkJ-Xr-oPQ"/>
+                        <outlet property="btnForDiscoverOtaChar" destination="WqI-nc-QOJ" id="BoT-ma-CD6"/>
+                        <outlet property="btnForDiscoverPeripheral" destination="Y7R-ye-55c" id="0fC-hj-Q4k"/>
+                        <outlet property="btnForDiscoverService" destination="GCI-0u-f2J" id="veP-Zj-wrR"/>
+                        <outlet property="textFileForBlockOtaReceive" destination="Cgh-BC-hQ5" id="29q-1P-ePd"/>
+                        <outlet property="textFileForBlockOtaWrite" destination="s6g-35-8aE" id="P9z-9U-Q07"/>
+                        <outlet property="textFileForIdentifyOtaReceive" destination="nYX-5J-zcW" id="rGC-CK-DOW"/>
+                        <outlet property="textFileForIdentifyOtaWrite" destination="y26-tt-cUZ" id="TtO-EK-lbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="420"/>
+        </scene>
+    </scenes>
+</document>
